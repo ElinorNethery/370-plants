@@ -5,7 +5,7 @@ import watering
 app = Flask(__name__)
 
 # Template for the website
-def template(message = "");
+def template(message = ""):
   now = datetime.datetime.now()
   timeString = now.strftime("%Y-%m-%d %H:%M")
   templateData = {
