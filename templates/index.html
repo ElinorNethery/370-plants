@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        body {
+            background-color: beige;
+            text-align: center;
+            font-family: monospace;
+        }
+        
+        .button {
+            background-color: seagreen;
+            border: none;
+            color: beige;
+            padding: 15px, 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            opacity: 0.8;
+            transition: 0.3s;
+            border-radius: 25px;
+            width: 100px;
+            height: 40px;
+        }
+        
+        .button:hover { opacity: 1 }
+        
+        h1 {
+            font-size: 40px;
+            color: darkgreen;
+            border-style: solid;
+            border-width: medium;
+            border-radius: 25px;
+        }
+        
+        .footer {
+            background-color: darkgreen;
+            text-align: center;
+            position: fixed;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            padding-top: 20px;
+            padding-bottom: 30px;
+            width: 100%;
+            height: 100px;
+            color: beige;
+            font-size: 15px;
+        }
+    </style>
+    <title>{{ title }}</title>
+</head>
+
+<body>
+
+    <h1>WELCOME TO YOUR AUTOMATED WATERING SYSTEM!</h1>
+    <h2>Server time: {{ time }}</h2>
+    <h4>{{ message }}</h4>
+    <a href="/water_log"><button>Check Watering Log</button></a>
+    <a href="/resevoir"><button>Check Water Supply Status</button></a>
+    
+    <div class="footer">
+        <p>Department of Computer Science</p>
+        <p>Colorado State University</p>
+        <p>Nathan Klisch   Elinor Nethery   Kyle Robinette</p>
+    </div>
+
+</body>
+
+</html>
