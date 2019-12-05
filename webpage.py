@@ -23,16 +23,16 @@ def hello():
 
 # Website that has loaded the water log (on button press)
 @app.route("/water_log")
-def checkLog()
+def checkLog():
   templateData = template(message = watering.getWaterLog())
   return render_template('index.html', **templateData)
 
 # Website that has loaded the reservoir status (on button press)
 @app.route("/reservoir")
-def checkSupply()
+def checkSupply():
   templateData = template(message = watering.getRefillStatus())
   return render_template('index.html', **templateData)
   
 # Run the server  
-if __name__ == "__main__"
+if __name__ == "__main__":
   app.run(host='127.0.1.1', port=80, debug=True)
